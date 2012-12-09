@@ -1,22 +1,45 @@
 ---
 layout: default
-title: GuoJing's Blog|只要心还跳
+title:  远离尘世的小木屋
 ---
 
-{% for post in paginator.posts %}
-{% if post.private %}
-<!--this is a private blog-->
-{% else %}
-<div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-<div class="date">记于{{ post.date | date:"%Y年%m月%d日"}} <a href="/categories/#{{ post.categories }}">{{ post.categories }}</a></div>
-<div class="content">
-{{ post.content }}
-<p class="forb">
-	{% for tag in post.tags %}
-     <a href="/tags/#{{ tag }}">#{{ tag }}</a>
-     {% endfor %}
-</p>
-</div>
-{% endif %}
-{% endfor %}
+<div class="content-list">
+	<span>文章列表</span>
+	<ul>
+	{% for post in paginator.posts %}
+		{% if post.private %}
 
+		{% else %}
+		<li>
+			<div class="title">
+				<a href="{{ post.url }}">
+					{{ post.title }}
+				</a>
+			</div>
+			<div class="time">
+				木兰 发布于{{ post.date | date:"%Y年%m月%d日" }}
+				<a href="/categories/#{{ post.categories }}">{{ post.categories }}</a>
+			</div>
+			
+			<div class="content">	
+				{{ post.content }}
+			</div>
+
+			<div class="content-tag">
+				{% for tag in post.tags %}
+					<a href="/tags/#{{ tag }}">#{{ tag }}</a>
+				{% endfor %}
+			</div>
+		</li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+</div>
+
+<div class="sidebar">
+	<div class="info">
+		<div class="title">
+			 关于木兰
+		</div>
+	</div>
+</div>

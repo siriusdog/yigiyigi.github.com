@@ -5,14 +5,14 @@ pygments:         true
 paginate:         10
 permalink:        /:categories/:year/:month/:day/:title/
 
-title:            "Yet another jekyll blog"
-url:              http://guojing.me
+title:           "木兰's 木屋"
+url:              http://lanmuwu.com
 feed:             /feed.xml
 author:
-    name:         Name
-    twitter:      twitter.com/name
-    key:          yourdisquskey
-description:      "只要心还跳"
-copyright:        "CopryRight GuoJing 2012-2012 by GitHub and Jekyll"
-headdesc:         "GuoJing的博客，关于设计，开发以及生活。"
-headkeys:         "设计,开发,思考,生活,豆瓣,读书,电影,音乐,游记"
+    name:         木兰
+    新浪微博:     weibo.com/jiexuangao      
+    key:          yigiyigi
+description:      "远离尘世的小木屋"
+copyright:        "CopryRight 木兰 by GitHub and Jekyll"
+headdesc:         "当你启程前往伊萨卡 但愿你的道路漫长， 充满奇迹，充满发现。"
+headkeys:         ""

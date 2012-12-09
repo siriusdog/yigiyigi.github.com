@@ -1,42 +1,24 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <title>{{ site.title }}|{{ site.description }}</title>
-  {% include header.html %}
-  <meta content="{{ site.headdesc }}" name="description"/>
-  <meta content="{{ site.headkeys }}" name="keywords"/>
-</head>
-<body>
-{% include banner.html %}
+	<head>
+		<meta charset="UTF-8">
+		<meta content="木兰、前端工程师、代码、设计、文字、摄影、一切美好的东西、远离尘世的小木屋" name="description">
+		<title>兰木屋 | by 木兰</title>
+		<link rel="stylesheet" href="/static/css/normalize.css">
+		<link rel="stylesheet" href="/static/css/main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			{% include header.html %}
 
-<div class="cast">{{ site.description }}...</div>
+			<div class="main">
+				{{ content }}
+			</div>
 
-<div class="main">
-{{ content }}
-</div>
+			{% include page-nav.html %}
 
-<div class="paginator">
-
-{% if paginator.previous_page or paginator.next_page %}
-
-{% if paginator.previous_page %}
-
-{% if paginator.previous_page == 1 %}
-<a href="{{ page.id }}/">上一页</a>
-{% else %}
-<a href="{{ page.id }}/page{{ paginator.previous_page }}/">上一页</a>
-{% endif %}
-
-{% endif %}
-
-{% if paginator.next_page %}
-<a href="{{ page.id }}/page{{ paginator.next_page }}/">下一页</a>
-{% endif %}
-</div>
-
-{% endif %}
-
-{% include footer.html %}
-</body>
+			{% include footer.html %}
+		</div>
+	<script type="text/javascript" src=""></script>
+	</body>
 </html>
-
