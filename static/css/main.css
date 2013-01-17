@@ -10,7 +10,7 @@
     &:after {
         clear: both;
     }
-	
+
     *zoom: 1;
 }
 
@@ -98,7 +98,7 @@ header .nav li.on a{
 .main .content-list li {
 	list-style: none;
 	border-bottom: 1px solid #E2E2E2;
-	padding: 10px 0;	
+	padding: 10px 0;
 }
 
 .main .content-list span, .main .sidebar .title {
@@ -118,6 +118,10 @@ header .nav li.on a{
 .main .content-list .time {
 	color: #FF9997;
 	font-size: 12px;
+}
+
+.main .content-detail {
+	width: 100%;
 }
 
 .main .sidebar {
