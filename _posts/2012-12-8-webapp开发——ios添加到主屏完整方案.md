@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  远离尘世的小木屋
 ---
 
