@@ -4,8 +4,8 @@ title:  远离尘世的小木屋
 ---
 
 <div class='content-list'>
-	<span class='time'>{{page.date | date_to_string}}</span>
 	<h1 class='title'><a href='{{page.url}}'>{{page.title}}</a></h1>
+	<div class='time'>木兰发表于：{{page.date | date_to_string}}</div>
 	<div class='content'>{{ content }}</div>
 	<div class="content-tag">
 		{% for tag in page.tags %}
