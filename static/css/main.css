@@ -110,9 +110,10 @@ header .nav li.on a{
 }
 
 .main .content-list .title {
-	height: 30px;
-	line-height: 20px;
-	font-size: 15px;
+	height: 40px;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .main .content-list .time {
